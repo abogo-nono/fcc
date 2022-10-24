@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+main {
+    display: block;
+}
+#navbar {
+    height: 100vh;
+    width: 20%;
+    float: left;
+    background-color: rgb(37, 31, 31);
+    color: aliceblue;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar header {
+    font-weight: 800;
+    font-size: 22px;
+    padding: 15px 10px;
+    text-align: center;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(218, 236, 230);
+    padding: 10px;
+    display: block;
+    display: flex;
+}
+#navbar ul li a:hover {
+    color: rgb(57, 187, 187);
+}
+#navbar ul li {
+    border-top: 1px solid rgb(218, 236, 230);
+}
+section {
+    width: 78%;
+    float: right;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section header {
+    font-weight: 800;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+section code {
+    display: block;
+    padding: 20px;
+    background-color: rgb(218, 216, 216);
+    margin: 2% 0;
+    border-radius: 10px;
+    color: rgb(146, 95, 90);
+}
+
+section p {
+    padding-left: 20px;
+    /* text-align: justify; */
+}
+
+section ul {
+    padding-left: 60px;
+}
+
+@media (max-width: 720px) {
+    #navbar {
+        height: 100vh;
+        width: 30%;
+    }
+    #navbar header {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    #navbar ul li a {
+        font-size: 10px;
+    }
+    section {
+        width: 68%;
+    }
+    section header {
+        font-weight: 800;
+        font-size: 18px;
+    }
+}
+
+s

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <form action="" method="post" id="survey-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="age">Age (optional)</label>
+                <input type="text" class="form-control" name="age" id="age">
+            </div>
+            <div class="form-group">
+                <label for="role">Which option best your current role?</label>
+                <select name="role" id="role" class="custom-select">
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full time job">Full time job</option>
+                    <option value="Full time learner">Full time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="Definitely" name="recommend" value="Definitely">
+                <label class="custom-control-label" for="Definitely">Definitely</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="Maybe" name="recommend" value="Maybe">
+                <label class="custom-control-label" for="Maybe">Maybe</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="Not sure" name="recommend" value="Not sure">
+                <label class="custom-control-label" for="Not sure">Not sure</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="Custom radio" name="recommend" value="Custom radio">
+                <label class="custom-control-label" for="Custom radio">Custom radio</label>
+            </div>
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <div class="form-group">
+                <label for="role">Which option best your current role?</label>
+                <select name="role" id="role" class="custom-select">
+                    <option value="Select an option" disabled>Select an option</option>
+                    <option value="challenges">challenges</option>
+                    <option value="Projects" selected>Projects</option>
+                    <option value="community">community</option>
+                    <option value="open source">open source</option>
+                </select>
+            </div>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="Open Source Community" name="improve" value="Open Source Community">
+                <label class="custom-control-label" for="Open Source Community">Open Source Community</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="Gitter help rooms" name="improve" value="Gitter help rooms">
+                <label class="custom-control-label" for="Gitter help rooms">Gitter help rooms</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="Videos" name="improve" value="Videos">
+                <label class="custom-control-label" for="Videos">Videos</label>
+            </div>
+            <p>Any comments or suggestions?</p>
+            <textarea name="comments" id="comments" cols="30" rows="10"
+                class="form-control"
+                placeholder="Enter your comments here..."></textarea>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

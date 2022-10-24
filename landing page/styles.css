@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* 
+.sticky {
+    position: fixed;
+    display: block;
+}  */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+header img {
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.nav-items {
+    float: right;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: goldenrod;
+    margin: 30px 10px;
+}
+
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-text {
+    padding-bottom: 20px;
+}
+
+form {
+    display: block;
+    padding: 5px;
+}
+
+form input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 1.5%;
+}
+.submit, 
+.btn {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-warning {
+    background-color: gold;
+    border-color: gold;
+    padding: 10px 30px;
+}
+
+section {
+    padding: 0px 10%;
+    margin-top: 4%;
+    display: grid;
+}
+
+article {
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+}
+
+article .right {
+    margin-left: 100px;
+    float: left;
+}
+
+article i {
+    color: gold;
+    float: left;
+}
+
+iframe {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#Pricing {
+    display: grid;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 29%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-head {
+    background-color: rgb(240, 230, 230);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-head h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1 {
+    font-weight: 600;
+    margin: 10px;
+}
+
+.card-footer {
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(240, 230, 230);
+    padding: 20px;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .copy-right {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+@media (max-width: 720px) {
+    
+    header img {
+        width: 10%;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+
+    section {
+        padding: 0px 1%;
+    }
+
+    .cards {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    
+}
+

@@ -1,0 +1,286 @@
+:root {
+    --text-color: aliceblue;
+    --background-color-1: rgb(165, 63, 63);
+    --background-color-2: rgb(31, 38, 49);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+#navbar, 
+header {
+    display: block;
+    text-align: right;
+    padding: 30px;
+    background-color: var(--background-color-1);
+    position: fixed;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 20px;
+    font-size: 22px;
+}
+
+section#welcome-section, 
+footer {
+    /* display: block; */
+    height: 90vh;
+    background-color: var(--background-color-2);
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+}
+
+section#welcome-section h1 {
+    font-weight: 900;
+    font-size: 50px;
+    padding-top: 15%;
+}
+
+section#welcome-section p {
+    font-weight: 100;
+    color: var(--background-color-1);
+    font-style: italic;
+    font-size: 25px;
+}
+
+#projects {
+    /* justify-content: center;
+    text-align: center; */
+    background-color: rgb(82, 83, 151);
+}
+#projects h1 {
+    font-weight: 800;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 60px;
+    color: var(--text-color);
+}
+
+#projects .line {
+    width: 46%;
+    margin-left: 27%;
+    border: 1px solid var(--text-color);
+    margin-bottom: 5%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.cards a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.card {
+    width: 100%;
+    background-color: rgb(32, 39, 36);
+    text-align: center;
+    border-radius: 2px;
+}
+
+.card-head img {
+    width: 100%;
+    height: 30vw;
+}
+
+.project-tile {
+    padding: 20px;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.tag {
+    color: var(--background-color-1);
+    font-weight: 600;
+    padding: 0px 10px;
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.project-tile:hover .tag {
+    opacity: 1;
+}
+
+.more {
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.btn {
+    border: 2px solid var(--background-color-2);
+    background-color: var(--background-color-2);
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    padding: 10px 20px;
+    background-color: var(--background-color-1);
+    border: var(--background-color-1);
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn:hover i {
+    animation: chevron 1s ease;
+}
+
+@keyframes chevron {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes social {
+    0% {
+        font-size: 22px;
+    }
+    100% {
+        font-size: 24px;
+    }
+}
+
+footer {
+    padding-top: 70px;
+}
+
+footer h1 {
+    padding-top: 60px;
+    font-size: 50px;
+}
+
+.h p {
+    color: var(--text-color);
+    font-style: italic;
+    font-weight: 100;
+}
+
+.socials {
+    margin-top: 5%;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 22px;
+    margin: 0px 20px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    /* animation: 0.3s 1s ease-out; */
+    transition: social 0.3s ease-out;
+}
+
+.socials a:hover {
+    animation: 0.3s 1s ease-out;
+}
+
+.socials a i {
+    padding: 10px;
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid var(--background-color-1);
+    margin-top: 14%;
+}
+
+.f {
+    padding-top: 4%;
+    padding-right: 2%;
+    justify-content: end;
+    text-align: right;
+}
+
+.f a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+@media (max-width: 720px) {
+    
+    nav a {
+        font-size: 18px;
+    }
+    
+    section#welcome-section, 
+    footer {
+        height: 100vh;
+    }
+    
+    section#welcome-section h1 {
+        font-size: 30px;
+        padding-top: 45vh;
+    }
+    
+    section#welcome-section p {
+        font-size: 16px;
+    }
+
+    #projects h1 {
+        font-size: 32px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+
+    .divider {
+        width: 100%;
+        border: 1px solid var(--background-color-1);
+        margin-top: 40%;
+    }
+
+    .f {
+        text-align: center;
+    }
+    .socials {
+        margin-top: 5%;
+    }
+    
+    .socials a {
+        font-size: 18px;
+        display: flex;
+        padding-top: 10%;
+    }
+    
+    .socials a i {
+        padding: 10px;
+    }
+}
